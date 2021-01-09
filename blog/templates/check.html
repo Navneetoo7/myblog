@@ -1,0 +1,13 @@
+<h1>Blogdot</h1>
+{% for mywebblog in object_list %}
+<h1>{{ mywebblog.title}}</h1>
+<h3>{{ mywebblog.wblog}}</h3>
+<br>
+{% endfor%}
+
+<p>For Login or Registertion</p>
+
+
+<form action="home" class="inline">
+    <button class="float-left submit-button" >Click</button>
+</form>
