@@ -1,4 +1,9 @@
-{% extends 'index.html'%}
+
 {% block content %}
  <h1>Welcome, {{user.username}}</h1>
+ {% for mywebblog in object_list %}
+<h1>{{ mywebblog.title}}</h1>
+<h3>{{ mywebblog.wblog}}</h3>
+<br>
+{% endfor%}
 {% endblock %}
