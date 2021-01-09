@@ -5,9 +5,11 @@ from .models import mywebblog
 
 
 class bloglist(ListView):
+    model =mywebblog
     template_name = 'index.html'
-    def getdetails(self):
-        return mywebblog.objects.all()
+    # template_name = 'index.html'
+    # def getdetails(self):
+    #     return mywebblog.objects.all()
 
 class blogdetails(DetailView):
     model =mywebblog
