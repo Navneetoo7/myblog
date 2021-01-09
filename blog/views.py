@@ -12,4 +12,4 @@ class bloglist(ListView):
 class blogdetails(DetailView):
     model =mywebblog
     template_name = 'index.html'       
-1
+
